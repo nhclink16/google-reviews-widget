@@ -19,9 +19,21 @@
     .review-widget_net a[href*="review-widget.net"],
     .review-widget_net [class*="powered"],
     .review-widget_net [class*="branding"],
+    .review-widget_net [class*="provided"],
     .review-widget_net footer,
-    .review-widget_net .footer {
+    .review-widget_net .footer,
+    .review-widget_net > div:last-child,
+    .review-widget_net p:last-child,
+    .review-widget_net span:last-child,
+    .review-widget_net small,
+    .review-widget_net [style*="font-size: 10"],
+    .review-widget_net [style*="font-size: 11"],
+    .review-widget_net [style*="font-size: 12"] {
       display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
     }
     /* Auto dark mode support */
     @media (prefers-color-scheme: dark) {
